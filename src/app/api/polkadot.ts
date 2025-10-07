@@ -7,7 +7,7 @@ export async function getPolkadotApi(): Promise<ApiPromise> {
     return api;
   }
 
-  const provider = new WsProvider('wss://rpc.polkadot.io');
+  const provider = new WsProvider('wss://rpc.ibp.network/polkadot');
   api = await ApiPromise.create({ provider });
   return api;
 }

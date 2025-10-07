@@ -10,13 +10,18 @@
     "test": "jest --watchAll"
   },
   "dependencies": {
-    "@polkadot/api": "^16.4.8",
-    "@polkadot/extension-dapp": "^0.62.1",
-    "@supabase/supabase-js": "^2.44.4",
-    "@walletconnect/web3-provider": "^1.8.0",
-    "next": "15.5.4",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "@polkadot/api": "^12.1.2",
+    "@polkadot/extension-dapp": "^0.46.10",
+    "@polkadot/react-identicons": "^3.5.1",
+    "@polkadot/util-crypto": "^12.1.2",
+    "@walletconnect/modal": "^2.6.2",
+    "@walletconnect/sign-client": "^2.10.1",
+    "@walletconnect/utils": "^2.10.1",
+    "next": "14.1.0",
+    "openai": "^4.28.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "sharp": "^0.33.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

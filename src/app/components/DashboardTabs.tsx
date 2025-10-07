@@ -106,8 +106,17 @@ export default function DashboardTabs() {
                 {daoData.proposals.length > 0 ? (
                   <ul className="list-disc list-inside text-gray-700">
                     {daoData.proposals.map((proposal: any) => (
-                      <li key={proposal.index}>
+                      <li key={proposal.index} className="mb-4 p-3 bg-gray-50 rounded-lg">
                         <strong>Index:</strong> {proposal.index}, <strong>Proposer:</strong> {proposal.proposer}
+                        <p className="mt-2 text-sm text-gray-600"><strong>Summary:</strong> {proposal.summary}</p>
+                        {proposal.fullDetails && (
+                          <details className="mt-2 text-xs text-gray-500">
+                            <summary>Full Details</summary>
+                            <pre className="whitespace-pre-wrap break-words">{
+                              JSON.stringify(JSON.parse(proposal.fullDetails.split("Args: ")[1]), null, 2)
+                            }</pre>
+                          </details>
+                        )}
                       </li>
                     ))}
                   </ul>
